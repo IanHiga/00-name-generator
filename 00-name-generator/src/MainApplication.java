@@ -10,8 +10,6 @@ public class MainApplication extends GraphicsApplication {
 	public static final String FILE_DIRECTORY = "data/";
 	public static final String FILE_EXTENSION = ".txt";
 	public static final String SYLLABLE_FILE = "syllables";
-	public static final int WINDOW_WIDTH = 800;
-	public static final int WINDOW_HEIGHT = 800;
 	
 	
 	public void init() {
@@ -19,12 +17,8 @@ public class MainApplication extends GraphicsApplication {
 		requestFocus();
 	}
 	
-	public void main() {
+	public void run() {
 		setMenu();
-		GRect rect = new GRect(100, 100, 100, 100);
-		rect.setFillColor(Color.BLUE);
-		add(rect);
-		/*
 		int choice = 0;
 		System.out.println("Welcome to the name generator!\n");
 		System.out.println("Choose an option:\n1) Generate a random name!\n2) Generate a name of a specific length!\n3) Exit");
@@ -44,7 +38,6 @@ public class MainApplication extends GraphicsApplication {
 		default:
 			break;
 		}
-		*/
 	}
 
 }
